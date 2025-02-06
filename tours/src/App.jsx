@@ -10,6 +10,12 @@ function App()  {
   // to store all the tours if the fetch request is successful
   const [tours, setTours] = useState([]);
 
+  //for removing tour content
+  const removeTour = (id) => {
+    const newTours = tours.filter((tour) => tour.id !== id);
+    setTours(newTours);
+  };
+
   const fetchTours = async () => {
     setIsLoading(true);
     try {
@@ -42,8 +48,8 @@ function App()  {
 
   return (
     <main>
-      {/* {tours} prop */}
-      <Tours tours={tours}/> 
+      {/* {tours} prop  {removeTour} prop*/}
+      <Tours tours = {tours} removeTour = {removeTour}/> 
     </main>
   );
 };

@@ -26,3 +26,7 @@ The Tours component will be responsible for rendering a list of Tour components.
 
 Once the data is loaded, we can set the state of component to store the tours data. We can then map over the tours array and render a Tour component for each tour. Each Tour component will receive the tour data as props, including the tour's id, image, info, name, and price.
 
+### Remove Tour
+
+To implement the "remove tour" functionality, we can add a button to each Tour component that, when clicked, removes the tour from the list of tours. 
+We can achieve this by updating the state of the Tours component to remove the tour from the tours array.
