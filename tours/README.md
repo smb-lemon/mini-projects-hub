@@ -30,3 +30,9 @@ Once the data is loaded, we can set the state of component to store the tours da
 
 To implement the "remove tour" functionality, we can add a button to each Tour component that, when clicked, removes the tour from the list of tours. 
 We can achieve this by updating the state of the Tours component to remove the tour from the tours array.
+
+### Read More
+
+To implement the "read more" functionality, we can add a button to each Tour component that, when clicked, expands the description of the tour. 
+We can achieve this by updating the state of the Tour component to toggle a "read more" flag, and conditionally rendering the full description based on the flag.
+
