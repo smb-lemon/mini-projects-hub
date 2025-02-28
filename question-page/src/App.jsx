@@ -6,14 +6,16 @@ const App = () => {
  const [activeId, setActiveId] = useState(null);
 
  const toggleQuestion = (id) => {
-    console.log(id);
+    setActiveId(id);
     
  }
-  return <main>
+  return (
+  <main>
     < Questions questions={questions} 
     activeId={activeId} 
     toggleQuestion={toggleQuestion}
     />
   </main>
+  )
 };
 export default App;
