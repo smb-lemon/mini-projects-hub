@@ -9,10 +9,12 @@ import menu from './data';
 // console.log(tempItems);
 
 const allCategories = new Set(menu.map((item) =>item.category));
-console.log(allCategories);
+
 
 const App = () => {
   const [menuItems, setMenuItems] = useState(menu);
+  const [catagories, setCatagories] = useState(allCategories);
+  console.log(allCategories);
   return (
   <main>
     <section className='menu'>
