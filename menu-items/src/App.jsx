@@ -3,10 +3,10 @@ import Title from './Title';
 import Menu from './Menu';
 import menu from './data';
 
-const tempCatagories = menu.map((item) =>
-  item.category
-)
-console.log(tempCatagories);
+const tempCatagories = menu.map((item) =>item.category);
+const tempSet = new Set(tempCatagories);
+const tempItems = ['all', ...tempSet];
+console.log(tempItems);
 
 const App = () => {
   const [menuItems, setMenuItems] = useState(menu);
