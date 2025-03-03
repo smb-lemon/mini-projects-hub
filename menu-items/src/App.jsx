@@ -12,6 +12,8 @@ const App = () => {
 
   const filterItems = (category) => {
     console.log(category);
+    const newItems = menu.filter((item)=> item.category === category);
+    setMenuItems(newItems);
   }
   return (
   <main>
