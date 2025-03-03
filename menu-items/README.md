@@ -57,3 +57,13 @@ const tempSet = new Set(tempCategories);
 const tempItems = ['all', ...tempSet];
 console.log(tempItems);
 ```
+### Unique Categories
+
+In the App.jsx component, set up functionality to get only the unique categories from the menu items data and store them in a separate array. Add an "all" category to this array to display all menu items.
+We can find more info on Set Object.
+
+### State Value and Render Categories
+
+Setting up the categories array as a state variable in the App.jsx component using the useState hook. This will allow us to modify the data and have those changes automatically reflected in the rendered output.
+
+Creating a Categories component and pass the categories state value down to this component. In the Categories component, iterate over the categories array and render buttons for each category.
