@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { links, social } from './data';
 import logo from './logo.svg';
 
 const Navbar = () => {
+  const [showLinks, setShowLinks] = useState(false);
   return (
-    <div>Navbar</div>
+    <nav>
+      <div className="nav-center">
+        <div className="nav-header">
+          <img src={logo} className='logo' alt='logo'/>
+        </div>
+      </div>
+    </nav>
   )
 }
 
-export default Navbar
+export default Navbar;
