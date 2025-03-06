@@ -18,9 +18,9 @@ const Navbar = () => {
             <FaBars />
           </button>
         </div>
-        {showLinks && <div className="links-container">
+        {showLinks && (<div className="links-container">
           <ul className="links">
-            {links.map(()=>{
+            {links.map((link)=>{
               const {id, url, text} = link;
               return <li key={id}>
                 <a href={url}>{text}</a>
@@ -28,7 +28,7 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        }  
+        )}  
       </div>
     </nav>
   )
