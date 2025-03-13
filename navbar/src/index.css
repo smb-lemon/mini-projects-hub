@@ -302,6 +302,13 @@ nav {
   overflow: hidden;
   transition: var(--transition);
 }
-.show-container {
+
+/* .show-container {
   height: 10rem;
-}
+} */
+ 
+ /* dynamic */
+ .links-container {
+  overflow: hidden;
+  transition: var(--transition);
+ }
