@@ -312,3 +312,29 @@ nav {
   overflow: hidden;
   transition: var(--transition);
  }
+
+ .social-icons {
+  display: none;
+ }
+
+ @media screen and (min-width: 800px) {
+  nav-toggle {
+    display: none;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 2px solid yellow;
+  }
+  .social-icons {
+    display: flex;
+    gap: 0.5rem;
+  }
+ }
